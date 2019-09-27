@@ -1,0 +1,22 @@
+#Service URL's
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.mongo.MongoAutoConfiguration
+
+
+
+  main:
+    allow-bean-definition-overriding : true
+    
+mongodb:
+  product:
+    host: dcp-ecom-db
+    port: 27017
+    database: products
+  productcategory:
+     host: dcp-ecom-db
+     port: 27017
+     database: productcategories
+     
+server:
+  port: 8787
